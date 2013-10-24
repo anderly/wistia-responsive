@@ -63,8 +63,8 @@ class SS_Wistia_Responsive {
  
 		// Hooks
 		add_action( 'wp_enqueue_scripts', array( self::$instance, 'register_wistia_iframe_api' ) );
-		add_filter( 'the_excerpt', array( self::$instance, 'make_responsive', 10, 1 ) );
-		add_filter( 'the_content', array( self::$instance, 'make_responsive', 10, 1 ) );
+		add_filter( 'the_excerpt', array( self::$instance, 'make_responsive' ), 10, 1 );
+		add_filter( 'the_content', array( self::$instance, 'make_responsive' ), 10, 1 );
 	}
  
 	/**
@@ -113,7 +113,7 @@ class SS_Wistia_Responsive {
 	 * Add the "videoFoam" parameter to enable the Wistia player to become responsive
 	 */
 	function make_responsive( $content ) {
-		return preg_replace( '/<iframe src="http:\/\/fast.wistia.net\/embed\/iframe\/(.*)"/isU', '<iframe src="http://fast.wistia.net/embed/iframe/${1}?videoFoam=true"', $content );
+		return preg_replace( '/src="http:\/\/fast.wistia.net\/embed\/iframe\/(.*)"/isU', 'src="http://fast.wistia.net/embed/iframe/${1}?videoFoam=true"', $content );
 
 	} //end function make_responsive( $content )
 
