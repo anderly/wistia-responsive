@@ -113,7 +113,7 @@ class SS_Wistia_Responsive {
 	 * Add the "videoFoam" parameter to enable the Wistia player to become responsive
 	 */
 	function make_responsive( $content ) {
-		return preg_replace( '/src="http:\/\/fast.wistia.net\/embed\/iframe\/(.*)"/isU', 'src="http://fast.wistia.net/embed/iframe/${1}?videoFoam=true"', $content );
+		return preg_replace( '/src="(.*)\/\/fast.wistia.net\/embed\/iframe\/(.*)"/isU', 'src="${1}//fast.wistia.net/embed/iframe/${2}?videoFoam=true"', $content );
 
 	} //end function make_responsive( $content )
 
