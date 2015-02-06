@@ -36,5 +36,8 @@ If you need help, have problems, want to leave feedback or want to provide const
 
 == Changelog ==
 
+= 1.1 =
+* Fix to allow protocol relative URLs
+
 = 1.0 =
 * This is the first public release.
