@@ -2,8 +2,8 @@
 Contributors: anderly, saintsystems
 Tags: wistia, responsive, video, embed
 Requires at least: 3.6
-Tested up to: 3.6.1
-Stable tag: 1.0
+Tested up to: 4.1
+Stable tag: 1.1.1
 License: GPLv3
 
 Automatically make your Wistia video embeds responsive!

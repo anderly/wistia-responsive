@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  * Automatically makes Wistia embeds responsive.
  *
  * @class 		SS_Wistia_Responsive
- * @version		1.1
+ * @version		1.1.1
  * @package		Wistia Responsive
  * @author 		Saint Systems
  */

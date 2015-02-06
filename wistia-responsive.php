@@ -3,7 +3,7 @@
 Plugin Name: Wistia Responsive
 Plugin URI: http://anderly.com/wistia-responsive
 Description: A simple plugin to make all Wistia embeds automatically responsive.
-Version: 1.1
+Version: 1.1.1
 Author: Adam Anderly
 Author URI: http://anderly.com
 
